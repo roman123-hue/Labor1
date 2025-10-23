@@ -1,0 +1,103 @@
+/* 1. Подключение стилей и проверка */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* 2. Стили для заголовков, параграфов, списков и ссылок */
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    color: #555;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #e74c3c;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Жирный текст */
+b {
+    color: #2c3e50;
+}
+
+/* Курсив */
+i {
+    color: #7f8c8d;
+}
+
+/* Зачеркнутый текст */
+del {
+    color: #95a5a6;
+}
+
+/* 3. Расположение контента слева и фотографии справа */
+.content {
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+
+.content-left {
+    flex: 2;
+}
+
+.content-right {
+    flex: 1;
+}
+
+/* 4. Стили для карточек */
+.content-left, .content-right {
+    background: white;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для фотографии */
+.my-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
