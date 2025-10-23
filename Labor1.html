@@ -1,40 +1,105 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Лабораторная работа 1</title>
+<style>
+/* Проверка что стили работают */
+body {
+    background-color: #f0f8ff;
+}
+
+/* Стили для текста */
+h1 {
+    color: darkblue;
+    font-size: 24px;
+}
+
+h2 {
+    color: navy;
+    font-size: 20px;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+}
+
+ul, ol {
+    color: darkgreen;
+    font-size: 16px;
+}
+
+a {
+    color: red;
+    font-size: 16px;
+}
+
+/* Размещение слева и справа */
+.content {
+    display: flex;
+}
+
+.content-left {
+    width: 70%;
+}
+
+.content-right {
+    width: 30%;
+}
+
+/* Стили для карточек */
+.content-left, .content-right {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Фотография */
+.my-photo {
+    width: 250px;
+    height: 200px;
+}
+</style>
 </head>
 <body>
 
-<h1>Это моя первая HTML страница</h1>
+<div class="content">
+    <div class="content-left">
+        <h1>Это моя первая HTML страница</h1>
+        
+        <h1>О себе</h1>
+        <p>
+            Меня зовут <b>Иван</b>. Я родился в <i>Москве</i>. Учился в школе номер 123. 
+            Люблю <b>компьютеры</b> и <i>спорт</i>. Раньше играл в <del>футбол</del>, 
+            а теперь занимаюсь плаванием. У меня есть собака по кличке Барбос.
+        </p>
+        
+        <h2>Какие фильмы мне нравятся</h2>
+        <ul>
+            <li>Терминатор</li>
+            <li>Матрица</li>
+            <li>Аватар</li>
+            <li>Железный человек</li>
+        </ul>
+        
+        <h2>Какая музыка мне нравится</h2>
+        <ol>
+            <li>Рок</li>
+            <li>Поп</li>
+            <li>Хип-хоп</li>
+            <li>Электронная</li>
+        </ol>
+        
+        <h2>Как связаться со мной</h2>
+        <a href="https://vk.com/moderoronoazoro">Вконтакте</a>
 
-<h1>О себе</h1>
-<p>
-Меня зовут <b>Иван</b>. Я родился в <i>Москве</i>. Учился в школе номер 123. 
-Люблю <b>компьютеры</b> и <i>спорт</i>. Раньше играл в <del>футбол</del>, 
-а теперь занимаюсь плаванием. У меня есть кот по кличке Барбос.
-</p>
-
-<h2>Какие фильмы мне нравятся</h2>
-<ul>
-<li>Терминатор</li>
-<li>Матрица</li>
-<li>Аватар</li>
-<li>Железный человек</li>
-</ul>
-
-<h2>Какая музыка мне нравится</h2>
-<ol>
-<li>Рок</li>
-<li>Поп</li>
-<li>Хип-хоп</li>
-<li>Электронная</li>
-</ol>
-
-<h2>Как связаться со мной</h2>
-<a href="https://vk.com/moderoronoazoro">Вконтакте</a>
-
-<h2>Моя фотография</h2>
-<img src="https://cdnstatic.rg.ru/crop910x606/uploads/images/161/30/45/Untitled-1.jpg" width="300" height="200">
+    </div>
+    
+    <div class="content-right">
+        <h2>Моя фотография</h2>
+        <img src="blob:https://web.telegram.org/8b65979e-5539-40e0-8d6c-3a74b0908e9d" alt="Моя фотография" class="my-photo">
+    </div>
+</div>
 
 </body>
 </html>
